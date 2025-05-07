@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Input form user</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script>
+        function colcuate(){
+            let a= parseFloat(document.getElementById("Textbox1").value);
+            let b= parseFloat(document.getElementById("Textbox2").value);
+
+            let c= a+b;
+
+            document.getElementById("Result").value=c;
+            // document.getElementById("abcd").innerText=`Result ${c}`;
+            document.getElementById("abcd").innerHTML=c;
+        }
+    </script>
+
+    <fieldset>
+        <label for="">Enter 1st number </label>
+        <input type="number" id="Textbox1">
+        <label for="">Enter 2st number </label>
+        <input type="number" id="Textbox2">
+        <label id="abcd" onclick="colcuate()">Result </label>
+        <input type="number" id="Result" readonly>
+        <button onclick="colcuate()">Result</button> 
+       </fieldset>
+</body>
+</html>

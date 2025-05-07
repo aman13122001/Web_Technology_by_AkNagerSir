@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <fieldset >
+      <label> Enter num 1</label><br>
+      <input type="number" id="num1" /><br>
+      <label> Enter num 2</label><br>
+      <input type="number" id="num2" /><br>
+      <label> Result</label><br>
+      <input type="text" id="result" readonly /><br>
+      <button onclick="calculate()">Result</button>
+    </fieldset>
+    <script>
+        function calculate(){
+        let a= parseFloat(document.getElementById("num1").value);
+        let b= parseFloat(document.getElementById("num2").value);
+        let c= a+b;
+
+        document.getElementById("result").value=c;
+    }
+    </script>
+  </body>
+</html>
